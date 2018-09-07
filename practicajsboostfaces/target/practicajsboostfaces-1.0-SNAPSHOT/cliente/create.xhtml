@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>         
+        <b:panelGrid columns="1" size="xs">                    
+            <b:inputText id="idcategoriaDiv" value="#{clienteCtrl.selected.id_cliente}"
+                         label="Id:" />
+            <b:inputText id="nombres_razon_socialDiv" value="#{clienteCtrl.selected.nombres_razon_social}"
+                         label="Nombres:" />
+            <b:inputText id="telefonoDiv" value="#{clienteCtrl.selected.telefono}"
+                         label="Telefono:" />
+            <b:inputText id="correoDiv" value="#{clienteCtrl.selected.correo}"
+                         label="Correo:" />
+            <b:inputText id="dni_rucDiv" value="#{clienteCtrl.selected.dni_ruc}"
+                         label="Dni o ruc:" />
+        </b:panelGrid>
+    </h:body>
+</html>
+
